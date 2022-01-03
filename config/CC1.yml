@@ -1,0 +1,22 @@
+# (optional) override key by default will use filename
+name: "CC1"
+# necessary when ui implemented
+description: 'type Hello world!'
+# you can use same expression as X-Mouse use
+# to read more. unsupported key or function please open issue!
+# https://www.highrez.co.uk/downloads/X-Mouse%20Button%20Control%20User%20Guide.pdf#page=8
+expression: Hello world!
+# event config (this is default if not set)
+event:
+  # hold or once ;
+  # once : just fire once after button press
+  # hold : cancel event on release button (may delay on fast mode)
+  type: once
+  # fast mode (can type over 600 wpm)
+  # basically each key will delayed
+  fast: false
+  # repeating (only type==hold)
+  repeat: false
+  # prevent fire multiple event when spamming button instead wait until event finish
+  blocking: false
+
