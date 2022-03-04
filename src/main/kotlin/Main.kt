@@ -77,7 +77,7 @@ suspend fun main() {
 	val lp = LaunchpadMini(dev.first())
 	// println(Human.parse("{ctrl}{press {alt}{expr {f11}}}"))
 	lp.loadDir("config")
-	lp.register(MiniPad.CC4,HumanConfiguration.load(YamlFile("config/CC1.yml"))?.createEvent())
+	/*lp.register(MiniPad.CC4,HumanConfiguration.load(YamlFile("config/CC1.yml"))?.createEvent())
 	lp.register(MiniPad.CC5, OnceEvent {
 		parse("{clipboard}").accept(BetterRobot(false))
 	})
@@ -156,26 +156,26 @@ suspend fun main() {
 		parse("{alt}{enter}{right}{up}{up}{enter}").accept(false)
 	})
 	lp.register(MiniPad.H1, OnceEvent {
-		Human.parse("const ").setDelay().accept()
+		parse("const ").setDelay().accept()
 	})
 	lp.register(MiniPad.H2, OnceEvent {
-		Human.parse("let ").setDelay().accept()
+		parse("let ").setDelay().accept()
 	})
 	lp.register(MiniPad.H3, OnceEvent {
-		Human.parse("div{tab}").setDelay().accept()
+		parse("div{tab}").setDelay().accept()
 	})
 	lp.register(MiniPad.H4, OnceEvent {
-		Human.parse("function ()\\{}{left}{left}{left}{left}").setDelay().accept()
+		parse("function ()\\{}{left}{left}{left}{left}").setDelay().accept()
 	})
 	lp.register(MiniPad.H5, OnceEvent {
-		Human.parse("async function ()\\{}{left}{left}{left}{left}").setDelay().accept()
+		parse("async function ()\\{}{left}{left}{left}{left}").setDelay().accept()
 	})
 	lp.register(MiniPad.H8, HoldEvent(true) {
 		parse(";{delay 500}{down}").accept()
 	})
 	lp.register(MiniPad.H7, OnceEvent {
 		parse("{clipboard}").accept()
-	})
+	})*/
 	/*
 	val aa = AudioSystem.getAudioInputStream(File("sound/vitas.wav"))
 	var clip: Clip? = null

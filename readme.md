@@ -19,3 +19,6 @@ This project is still work in progress (on free time) any suggestion please open
 ## Internal
 + Use kotlin coroutines to fire event to make it cancellable
 + Use yml in config file
+
+## Note
++ more example expression can be found in Main.kt (inside parse function)
